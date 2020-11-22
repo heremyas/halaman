@@ -1,0 +1,28 @@
+.myNav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  background-color: var(--pm-color);
+  color: var(--sd-color);
+  height: 60px;
+}
+
+.halaman {
+  font-family: "Pacifico", cursive;
+  font-weight: lighter;
+}
+
+.items {
+  font-weight: lighter;
+  display: flex;
+}
+
+.items li {
+  padding: 0 10px;
+}

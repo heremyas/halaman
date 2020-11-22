@@ -1,0 +1,66 @@
+.hero {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/how-to-grow-succulents-1590071439.jpg?crop=1.00xw:0.755xh;0,0.0728xh&resize=1200:*");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mantra {
+  color: #fff;
+  font-family: "Amatic SC", cursive;
+  font-weight: lighter;
+  margin: 20px;
+  font-size: 100px;
+  text-align: center;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.whatIs,
+.scroll {
+  padding: 13px 16px;
+  margin: 0 10px;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+.whatIs,
+.scroll,
+.scroll:hover,
+.whatIs:hover {
+  border-width: 2px;
+  border-radius: 10px;
+}
+
+.whatIs {
+  color: #fff;
+  background-color: var(--pm-color);
+  border: var(--pm-color) solid;
+}
+
+.scroll {
+  color: var(--pm-color);
+  background-color: #fff;
+  border: #fff solid;
+}
+
+.whatIs:hover {
+  color: var(--pm-color);
+  background-color: #fff;
+  border: var(--pm-color) solid;
+}
+
+.scroll:hover {
+  color: #fff;
+  background-color: var(--pm-color);
+  border: #fff solid;
+}
