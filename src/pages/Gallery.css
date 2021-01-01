@@ -7,9 +7,20 @@
   align-items: center;
 }
 
-.images {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 80vw;
-  height: 80vh
+.imgItem{
+  width: 300px;
+  height: auto;
+  margin: 5px;
+  background-color: #f1f1f1;
+  padding-bottom: 30px;
+  color: black;
+  text-align: center;
+  font-size: x-large;
+}
+
+.imgItem img{
+  width: 100%;
+  height: auto;
+  border: #f1f1f1 15px solid;
+  border-bottom: none;
 }

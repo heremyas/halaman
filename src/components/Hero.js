@@ -11,7 +11,9 @@ const Hero = () => {
         <a href="#gallery">
           <h3 className="scroll">SCROLL DOWN</h3>
         </a>
-        <h3 className="whatIs">WHAT IS BOTANIM?</h3>
+        <a href="#about">
+          <h3 className="whatIs">WHAT IS BOTANIM?</h3>
+        </a>
       </div>
     </div>
   );

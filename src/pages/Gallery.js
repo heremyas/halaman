@@ -1,29 +1,23 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./Gallery.css";
 
-const Gallery = () => {
-  useEffect(() => {
-    test();
-  }, []);
+function Gallery({ items }) {
 
-  const [state, setstate] = useState('');
-  const url =
-    "https://trefle.io/api/v1/plants/search?token=RFn2dI7Xud0AVrGPBmpFpaDdFDnrdv_fr-dsjT8KyGA&q=succulent";
-  //   const url = "https://jemtech-api.herokuapp.com/api/content_data/all";
+  // const [loading, setLoading] = useState(true)
 
-  const test = async () => {
-    const response = await fetch(url);
-    const data = await response.json();
-    setstate(data.data);
-  };
+  // useEffect(() => {
+  //   items
+  // }, [])
+
 
   return (
     <div id="gallery" className="container">
-      <div className="images">
-        {state.map((images) => (
-          <img key={images.id} src={images.image_url} alt={images.common_name}></img>
-        ))}
-      </div>
+      {items === "loading" ? <h1>Loading...</h1> :
+        items.map((imgUrl => {
+          // THERE IS ANOTHER WAY TO DO THIS!!!!
+          return imgUrl.image_url !== null ? <div className="imgItem" key={imgUrl.id}><img src={imgUrl.image_url} alt="Thumbnail" />{imgUrl.common_name}</div> : ""
+        }))
+      }
     </div>
   );
 };
