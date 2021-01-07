@@ -5,8 +5,8 @@
   scroll-behavior: smooth;
 }
 
-a {
-  text-decoration: none;
+a, a:hover {
+  text-decoration: none;  
 }
 
 li {

@@ -16,11 +16,19 @@
 .halaman {
   font-family: "Pacifico", cursive;
   font-weight: lighter;
+  
+}
+
+.halaman img{
+  width: auto;
+  height: 2rem;
 }
 
 .items {
   font-weight: lighter;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .items li {

@@ -1,5 +1,7 @@
 import React from "react";
 import "./Gallery.css";
+import Slideshow from "../components/Slideshow"
+
 
 function Gallery({ items }) {
 
@@ -11,13 +13,10 @@ function Gallery({ items }) {
 
 
   return (
-    <div id="gallery" className="container">
-      {items === "loading" ? <h1>Loading...</h1> :
-        items.map((imgUrl => {
-          // THERE IS ANOTHER WAY TO DO THIS!!!!
-          return imgUrl.image_url !== null ? <div className="imgItem" key={imgUrl.id}><img src={imgUrl.image_url} alt="Thumbnail" />{imgUrl.common_name}</div> : ""
-        }))
-      }
+    <div id="gallery" className="cont">
+
+      <Slideshow items={items}/>
+      
     </div>
   );
 };

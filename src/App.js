@@ -5,6 +5,7 @@ import Gallery from "./pages/Gallery";
 import axios from "axios"
 import { useEffect, useState } from "react"
 import About from "./pages/About";
+// import Totop from "./components/Totop"
 
 function App() {
   useEffect(() => {
@@ -26,8 +27,8 @@ function App() {
 
   return (
     <div className="App">
-
-      <Nav title="BOTANIM"/>
+      {/* <Totop /> */}
+      <Nav/>
       <Hero />
       <Gallery items={state}/>
       <About />
